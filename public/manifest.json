@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Xfolio Web V2",
+    "short_name": "xfolio-web-v2",
+    "version": "0.0.1",
+    "description": "Community-driven cross-chain trading platform",
+    "icons": {
+        "256": "xfolio256.png"
+    },
+    "permissions": [
+        "tabs","<all_urls>"
+    ],
+    "browser_action": {
+        "default_title": "Xfolio Web",
+        "default_popup": "index.html"
+    }
+}

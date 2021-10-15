@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export && npm run prepare",
+    "prepare": "mv out/_next out/assets && sed -i 's/\\/_next/\\/assets/g' out/**.html",
     "start": "next start",
-    "lint": "next lint"
+    "lintn": "next lint",
+    "lint": "eslint . --ext .ts --fix"
   },
   "dependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
@@ -24,10 +26,16 @@
     "web3modal": "^1.9.4"
   },
   "devDependencies": {
-    "@types/react": "17.0.27",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "autoprefixer": "^10.3.7",
-    "eslint": "8.0.0",
+    "eslint": "^8.0.1",
     "eslint-config-next": "11.1.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.16",
     "typescript": "4.4.3"

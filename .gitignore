@@ -11,6 +11,8 @@
 # next.js
 /.next/
 /out/
+out.crx
+out.pem
 
 # production
 /build

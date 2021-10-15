@@ -1,6 +1,8 @@
-require("@nomiclabs/hardhat-waffle");
+import { HardhatUserConfig } from "hardhat/config"
 
-module.exports = {
+import "@nomiclabs/hardhat-waffle"
+
+const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       chainId: 1337
@@ -12,3 +14,5 @@ module.exports = {
   },
   solidity: "0.8.4",
 };
+
+export default config
