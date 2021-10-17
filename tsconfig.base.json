@@ -23,7 +23,8 @@
   },
   "include": [
     "./scripts",
-    "./test"
+    "./test",
+    "./typechain"
   ],
   "extends": "./tsconfig.paths.json",
   "files": [
