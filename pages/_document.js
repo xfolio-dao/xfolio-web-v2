@@ -8,9 +8,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html style={{width:'500px', height:'600px'}}>
+      <Html style={{ width:'500px', height:'600px' }}>
         <Head />
-        <body style={{width:'500px', height:'600px'}}>                                                           
+        <body style={{ width:'500px', height:'600px' }}>                                                           
           <Main />
           <NextScript />
         </body>
