@@ -23,7 +23,7 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": ["error", 2],
+        "indent": ["error", 4],
         "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["error"],
         "@typescript-eslint/ban-ts-comment": ["warn"],

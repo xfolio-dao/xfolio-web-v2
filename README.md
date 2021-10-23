@@ -14,7 +14,7 @@ Crosschain ethereum wallet and trading platform made by the people, for the peop
 * **Frontend**: Next.js, tailwindcss, 
 * **Blockchain**: ethers.js, ipfs-http-client
 * **Smart contracts**: hardhat, openzeppelin
-* **Powered by**: 0x, xPollinate, 1inch
+* **Powered by**: 0x, xPollinate, 1inch, Alchemy, Etherscan.io
   
 ## Try it yourself
 Clone the repository:
