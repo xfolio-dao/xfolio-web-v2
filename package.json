@@ -25,6 +25,7 @@
     "web3modal": "^1.9.4"
   },
   "devDependencies": {
+    "@tailwindcss/jit": "^0.1.18",
     "@typechain/ethers-v5": "^7.2.0",
     "@typechain/hardhat": "^2.3.1",
     "@types/chai": "^4.2.22",

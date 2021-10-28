@@ -2,6 +2,7 @@
   "extends": "./tsconfig.base.json",
   "module": "esnext",
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "typechain"
   ]
 }
