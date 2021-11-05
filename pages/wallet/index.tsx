@@ -4,7 +4,7 @@ import { NextPage } from 'next'
 const Wallet: NextPage = () => {
     return (
         <div className='container h-[475px]'>
-            <p>This is the main screen!</p>
+            <p>This is the main wallet screen!</p>
         </div>
     )
 }
