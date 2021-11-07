@@ -1,12 +1,18 @@
 import { NextPage } from 'next'
-// import Container from '../components/Container'
+// import { MemoryRouter, Route, Routes } from 'react-router-dom'
+import { Router } from 'react-chrome-extension-router'
+import Login from './authorization'
+import Swap from './swap'
+import Wallet from './wallet'
 
-const Wallet: NextPage = () => {
+const Main: NextPage = () => {
     return (
-        <div className='container h-[475px]'>
-            <p>This is the main screen!</p>
-        </div>
+        <Router>
+            <Login/>
+            <Wallet/>
+            <Swap/>
+        </Router>
     )
 }
 
-export default Wallet
+export default Main
