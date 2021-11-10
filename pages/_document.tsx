@@ -9,9 +9,9 @@ export default class MyDocument extends Document {
 
     render():ReactElement {
         return (
-            <Html style={{ width:'500px', height:'600px' }}>
+            <Html style={{ width:'500px', height:'600px', overflow:'auto' }}>
                 <Head />
-                <body style={{ width:'500px', height:'600px' }}>                                                           
+                <body style={{ width:'500px', height:'600px', overflow:'auto' }}>                                                           
                     <Main />
                     <NextScript />
                 </body>
