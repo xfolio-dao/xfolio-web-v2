@@ -3,6 +3,9 @@ import { Link, getComponentStack } from 'react-chrome-extension-router'
 import { CogIcon, ChartBarIcon, SwitchHorizontalIcon, ViewGridIcon, ChatAltIcon } from '@heroicons/react/solid'
 import Wallet from '../../pages/wallet'
 import Swap from '../../pages/swap'
+import Chat from '../../pages/chat'
+import Extensions from '../../pages/extensions'
+import Settings from '../../pages/settings'
 
 const Footer:React.FC = () => {
     const components = getComponentStack()
@@ -20,15 +23,15 @@ const Footer:React.FC = () => {
                 <Link component={Swap} props={{ name: 'swap' }}>
                     <SwitchHorizontalIcon className='h-[40px] text-gray-500 hover:text-white'/>
                 </Link>
-                <a>
+                <Link component={Extensions} props={{ name: 'extensions' }}>
                     <ViewGridIcon className='h-[40px] text-gray-500 hover:text-white'/>
-                </a>
-                <a>
+                </Link>
+                <Link component={Chat} props={{ name: 'chat' }}>
                     <ChatAltIcon className='h-[40px] text-gray-500 hover:text-white'/>
-                </a>
-                <a>
+                </Link>
+                <Link component={Settings} props={{ name: 'settings' }}>
                     <CogIcon  className='h-[40px] text-gray-500 hover:text-white'/>
-                </a>
+                </Link>
             </div>  
         </nav>
     )
