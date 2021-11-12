@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { getComponentStack } from 'react-chrome-extension-router'
+import React, { useEffect } from 'react'
+import { getComponentStack, getCurrent } from 'react-chrome-extension-router'
 import { CogIcon, ChartBarIcon, SwitchHorizontalIcon, ViewGridIcon, ChatAltIcon } from '@heroicons/react/solid'
 import Wallet from '../../pages/wallet'
 import Swap from '../../pages/swap'
@@ -8,17 +8,17 @@ import Extensions from '../../pages/extensions'
 import Settings from '../../pages/settings'
 import { Link } from 'react-chrome-extension-router'
 // import RouterLink from '../RouterLink'
+import { useCurrentComponentName } from '../../hooks'
 
 const Footer:React.FC = () => {
-    const [currentComponentName,setCurrentComponentName] = useState('')
+    const currentComponentName = useCurrentComponentName()
     const components = getComponentStack()
     
     useEffect(() => {
         console.log(components)
         if (components && components.length) {
-            const lastComponent = components.slice(-1)[0]
-            console.log(lastComponent.props.name)
-            setCurrentComponentName(lastComponent.props.name)
+            const { props } = getCurrent()
+            console.log(`${props.name}`)
         }
     },[components])
 
